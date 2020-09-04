@@ -24,7 +24,7 @@
         }
      }catch(err){
          console.log(err);
-         response.err={error:err , errorMsg:'something went wrong try again'}
+         response.err={error:err, errorCode:'GN_ERR', errorMsg:'something went wrong try again'}
          return res.json(response);
      }
  }
@@ -41,15 +41,20 @@
     console.log(req.body);
    let response = getResponseTemplate();
     try {
-       let regUser = await registerUser(req.body);
-       if(regUser){
+       let regUser = await verifyUser(req.body);
+       if(regUser.status){
            response.status = true
-           response.payload = { _msg : 'OTP Sent Successfully'} 
+           response.payload = { _token : regUser.user}
+           response._msg="Registration successfull" 
            return res.status(200).json(response);
+       }else{
+           response.status = false;
+           response.error = {errorCode:'INVALID_OTP',errorMsg:'invalid OTP try agagin'} //otpfailed
+           return res.json(response);
        }
     }catch(err){
         console.log(err);
-        response.err={error:err , errorMsg:'something went wrong try again'}
+        response.error={error:err, errorCode:'GN_ERR',errorMsg:'something went wrong try again'}
         return res.json(response);
     }
 }

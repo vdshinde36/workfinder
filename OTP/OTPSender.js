@@ -14,7 +14,7 @@ const springedge = require("springedge");
     function sendOTP(user,callback){
 
        let params = {
-           'sender': 'CODOLT',
+           'sender': 'APECTO',
            'apikey': '6647cih414vw90018k8j82335t09p96n0d',
            'to': [user.mobileNumber],
            'message': `Verification Code for Workfinder ${user.otp}`,
@@ -26,6 +26,7 @@ const springedge = require("springedge");
              return callback(err,null);
            }
            console.log('[OTPSender][Returning Response]');
+           console.log(response);
            return callback(null,response);
          });
        }

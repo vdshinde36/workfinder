@@ -4,9 +4,10 @@
  */
 
 
-const { UserRegistrationOTP } = require('../models');
+const { UserRegistrationOTP, User} = require('../models');
 const { generateOTP } = require('../utils');
 const sendOTP = require('../OTP/OTPSender');
+const { generateToken } = require('../Auth/auth');
 
 
 
@@ -50,17 +51,35 @@ const sendOTP = require('../OTP/OTPSender');
      
  }
 
+ /**
+  * 
+  * This function checks otp and save to user table
+  * @param {Object} user 
+  * @return {Object} Anonymus Object
+  * 
+  * @TODO you dumb vaibhav use Transaction for consistency across collections
+  * @TODO after verifying record delete entry from UserRegistration OTP
+  */
  async function verifyUser(user) {
     console.log(`[Register.Service]`);
     console.log(user);
+    try {
     let userRegistration = await UserRegistrationOTP.findOne({ mobileNumber:user.mobileNumber }).exec();
     if(verifyOtp(userRegistration.otp,user.otp)){
-        delete userRegistration.otp;
-        let user = await new User(userRegistration).save();
-        return true;
+        console.log('Otp verification successfull');
+        let { name, mobileNumber, adharNumber, worktype } = userRegistration;
+        let newUser =  new User({name, mobileNumber, adharNumber, worktype});
+        await newUser.save(); //saving doc to User Collections
+        await UserRegistrationOTP.deleteOne({mobileNumber:user.mobileNumber}); // delete 
+        let encryptedUser = generateToken(newUser);
+        return {status:true,user:encryptedUser};
     }else{
-        false
+         return {status:false, user:null}
     }
+   }catch(err){
+       console.log(err);
+       throw err;
+   }
 
 
  }
