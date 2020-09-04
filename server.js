@@ -8,4 +8,57 @@
  */
 
 
- 
+ /**
+ * @file server.js
+ * @description i mind is blank right now i will do it later
+ * @note remove all console.log and try to use advance logging like winston with http tarnspoert for prod
+ */
+
+
+
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require('cors');
+const bodyParser = require("body-parser");
+const cookieParser=require('cookie-parser');
+const config = require('./Config/config')
+
+
+// Routes
+const registerRoute = require('./routes/register');
+
+
+// app
+const app = express();
+
+// db
+mongoose
+    .connect(config.MONGO_URI, {
+        useNewUrlParser: true,
+        useCreateIndex:true,
+        useFindAndModify:false,
+        useUnifiedTopology: true
+    })
+    .then(() => console.log(`[DB][DB Connected.........]`));
+
+
+// middlewares 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser()); 
+app.use(cors());
+
+
+// routes
+app.use("/api",registerRoute);
+
+
+const port = config.PORT || 3000;
+
+console.log(`[process.env][${process.env.toString()}]`);
+  
+app.listen(port, () => console.log(`[Server][Server running on port ${port}]`));
+  
+
+
+
