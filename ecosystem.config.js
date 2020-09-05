@@ -2,8 +2,8 @@ const path = require("path");
 
 module.exports = {
   apps : [{
-    name: 'sanjiwani_backend',
-    script: './Server.js',
+    name: 'workfinder_backend',
+    script: './server.js',
     instances: 1,
     watch: false,
     env:{

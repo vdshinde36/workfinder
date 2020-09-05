@@ -27,6 +27,7 @@
     "express-validator": "^6.6.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.2",
-    "springedge": "^1.0.5"
+    "springedge": "^1.0.5",
+    "winston": "^3.3.3"
   }
 }

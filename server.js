@@ -21,7 +21,10 @@ const mongoose = require("mongoose");
 const cors = require('cors');
 const bodyParser = require("body-parser");
 const cookieParser=require('cookie-parser');
-const config = require('./Config/config')
+const config = require('./Config/config');
+const heartbeat = require('./routes/heartbeat')
+
+const logger = require('./Logger/logger');
 
 
 // Routes
@@ -53,11 +56,17 @@ app.use(cors());
 // routes
 app.use('/api',registerRoute);
 app.use('/api',loginRoute);
+app.use('/heartbeat', heartbeat);
 
 
-const port = config.PORT || 3000;
+
+
+
+
+const port = config.PORT || 7000;
 
 console.log(`[process.env][${process.env.toString()}]`);
+logger.info('Server Started');
   
 app.listen(port, () => console.log(`[Server][Server running on port ${port}]`));
   
