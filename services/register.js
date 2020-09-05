@@ -20,6 +20,8 @@ const { generateToken } = require('../Auth/auth');
      console.log(`[Register.Service]`);
      console.log(user);
      try {
+         let userRegistred = await User.findOne({ mobileNumber:user.mobileNumber});
+         if(!userRegistred){
          let userRegistration = await UserRegistrationOTP.findOne({ mobileNumber:user.mobileNumber }).exec();
          if(userRegistration) { // checking if user is already present
             console.log(`User Is Already Registered Returing Same Object`);
@@ -27,8 +29,7 @@ const { generateToken } = require('../Auth/auth');
                 if(err){
                     throw err;
                 }
-                console.log(`[Register.Service][OtpSent][${status.toString()}]`)
-                return userRegistration
+                console.log(`[Register.Service][OtpSent][${status.toString()}]`);
             })
              return userRegistration; // returning user
          }else{
@@ -40,10 +41,14 @@ const { generateToken } = require('../Auth/auth');
                       throw err;
                   }
                   console.log(`[Register.Service][OtpSent][${status}]`)
-                  return userRegistrationOTP;
+                  
              });
+             return userRegistrationOTP;
              
          }
+        }else{ // user is already Present
+            throw new Error('USR_EXIST');
+        }
 
      }catch(err){
          throw err;

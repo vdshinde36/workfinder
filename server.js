@@ -26,6 +26,7 @@ const config = require('./Config/config')
 
 // Routes
 const registerRoute = require('./routes/register');
+const loginRoute = require('./routes/login');
 
 
 // app
@@ -50,7 +51,8 @@ app.use(cors());
 
 
 // routes
-app.use("/api",registerRoute);
+app.use('/api',registerRoute);
+app.use('/api',loginRoute);
 
 
 const port = config.PORT || 3000;

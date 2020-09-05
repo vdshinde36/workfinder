@@ -20,6 +20,8 @@ const springedge = require("springedge");
            'message': `Verification Code for Workfinder ${user.otp}`,
            'format': 'json'
          }; 
+         console.log(`[OTPSender][Template]`);
+         console.log(user);
          springedge.messages.send(params, 5000, function (err, response) {
            if (err) {
                console.log(`OTP Sender ${err}`);

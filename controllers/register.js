@@ -24,6 +24,11 @@
         }
      }catch(err){
          console.log(err);
+         if(err.message === 'USR_EXIST'){
+             response.status = false,
+             response.error={ errorCode:err.message,errorMsg:'You Are already Registred Please Try Login'}
+             return res.json(response);
+         }
          response.err={error:err, errorCode:'GN_ERR', errorMsg:'something went wrong try again'}
          return res.json(response);
      }
