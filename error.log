@@ -1,0 +1,10 @@
+{"level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:35:47.457Z"}
+{"level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:39:41.334Z"}
+{"message":"[Job.Controller][error]","level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:39:41.335Z"}
+{"level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:46:40.230Z"}
+{"message":"[Job.Controller][error]","level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:46:40.231Z"}
+{"level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:48:02.090Z"}
+{"message":"[Job.Controller][error]","level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:48:02.091Z"}
+{"level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:50:14.488Z"}
+{"message":"[Job.Controller][error]","level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:50:14.489Z"}
+{"message":"[Job.Controller][error]","level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:53:17.142Z"}

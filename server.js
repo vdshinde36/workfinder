@@ -22,7 +22,8 @@ const cors = require('cors');
 const bodyParser = require("body-parser");
 const cookieParser=require('cookie-parser');
 const config = require('./Config/config');
-const heartbeat = require('./routes/heartbeat')
+const heartbeat = require('./routes/heartbeat');
+const jobRoutes = require('./routes/job');
 
 const logger = require('./Logger/logger');
 
@@ -43,7 +44,8 @@ mongoose
         useFindAndModify:false,
         useUnifiedTopology: true
     })
-    .then(() => console.log(`[DB][DB Connected.........]`));
+    .then(() => console.log(`[DB][DB Connected.........]`))
+    .catch(err => { console.log('[DB] [DB error]')});
 
 
 // middlewares 
@@ -56,6 +58,7 @@ app.use(cors());
 // routes
 app.use('/api',registerRoute);
 app.use('/api',loginRoute);
+app.use('/api',jobRoutes);
 app.use('/heartbeat', heartbeat);
 
 

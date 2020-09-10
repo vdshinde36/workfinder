@@ -5,7 +5,7 @@ cd ~/apecto
 echo "directory changed......"
 pm2 delete 
 sudo rm -Rv workfinder
-git clone git@gitlab.com:codolyte/workfinder.git
+git clone git@github.com:vdshinde36/workfinder.git
 echo "cloning staered from git repository......."
 cd workfinder
 echo "directory changed......"

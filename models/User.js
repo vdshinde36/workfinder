@@ -39,7 +39,13 @@ const userSchema=new mongoose.Schema({
     worktype:{
         type:String,
         required:true,
-    }
+    },
+    accepted : [ // it collected all job
+        {
+            type : mongoose.Schema.Types.ObjectId,
+            ref : 'Job'
+        }
+    ]
 
 },{timestamps:true});
 // virtual field

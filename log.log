@@ -8,3 +8,50 @@
 {"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-05T09:48:12.168Z"}
 {"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-05T09:48:38.459Z"}
 {"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-05T09:51:40.650Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-05T14:17:58.453Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-05T14:33:42.176Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-05T14:40:53.481Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-07T13:34:16.599Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:24:02.294Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:30:44.442Z"}
+{"message":"[Job.Controller]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:31:12.580Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:35:43.342Z"}
+{"level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:35:47.457Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:39:36.327Z"}
+{"message":"[Job.Controller]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:39:41.333Z"}
+{"level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:39:41.334Z"}
+{"message":"[Job.Controller][error]","level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:39:41.335Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:46:33.286Z"}
+{"message":"[Job.Controller]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:46:40.228Z"}
+{"level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:46:40.230Z"}
+{"message":"[Job.Controller][error]","level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:46:40.231Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:47:57.891Z"}
+{"message":"[Job.Controller]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:48:02.085Z"}
+{"level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:48:02.090Z"}
+{"message":"[Job.Controller][error]","level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:48:02.091Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:50:09.997Z"}
+{"message":"[Job.Controller]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:50:14.481Z"}
+{"message":"[PostJob.Server]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:50:14.485Z"}
+{"level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:50:14.488Z"}
+{"message":"[Job.Controller][error]","level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:50:14.489Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:53:13.126Z"}
+{"message":"[Job.Controller]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:53:17.134Z"}
+{"message":"[PostJob.Server]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:53:17.139Z"}
+{"message":"[Job.Controller][error]","level":"\u001b[31merror\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:53:17.142Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:54:19.909Z"}
+{"message":"[Job.Controller]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:54:24.269Z"}
+{"message":"[PostJob.Server]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T05:54:24.275Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T06:20:21.158Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-08T06:20:54.332Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T01:33:18.784Z"}
+{"message":"[Job.Controller]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T01:33:29.908Z"}
+{"message":"[PostJob.Server]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T01:33:29.914Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T01:38:24.247Z"}
+{"message":"[Job.Controller]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T01:38:32.582Z"}
+{"message":"[PostJob.Server]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T01:38:32.587Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T01:40:31.966Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T02:23:13.313Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T02:24:29.880Z"}
+{"message":"[Job.Controller]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T02:31:57.697Z"}
+{"message":"[PostJob.Server]","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T02:31:57.699Z"}
+{"message":"Server Started","level":"\u001b[32minfo\u001b[39m","service":"workfinder","timestamp":"2020-09-10T02:32:04.893Z"}
